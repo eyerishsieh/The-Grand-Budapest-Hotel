@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 56%;
+  margin: auto;
+  padding: 10%;
+  display: block;
+}
+
+h2, h3, h4, h5 {
+  padding: 60px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+h2 {
+  color: orchid;
+  font-family: "Monsieur La Doulaise", cursive;
+  letter-spacing: 4px;
+  font-size: 5em;
+}
+
+h3 {
+  color: firebrick;
+  letter-spacing: 4px;
+  font-size: 5em;
+  font-family: "New Rocker", cursive;
+}
+
+h4 {
+  color: darkGoldenRod;
+  padding: 10%;
+  font-family: "Times New Roman", serif;
+  font-size: 3em;
+}
+
+h5 {
+  color: plum;
+  font-family: 'Federo', sans-serif;
+  font-size: 4em;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(000,000,000, 0.8);
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a:hover {
+  color: plum;
+}
+
+nav a:active {
+  color: orchid;
+}
+
+nav ul li {
+  margin: auto;
+  text-align: center;
+  list-style: none;
+  float: left;
+  width: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul li a {
+  text-align: center;
+  text-decoration:none;
+  color: navajowhite;
+  padding: 20px 20px;
+  font-family: "Garamond", serif;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 18pt;
+}
+
+ul {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero-image {
+  background-image: url("../image/home.jpeg");
+  background-color: rgb(169,169,169, 0.25);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:180vh;
+}
+
+#review {
+  float: left;
+  padding: 3%;
+  padding-top: 10%;
+}
+
+.rating {
+  list-style: none;
+
+}
+
+.rating a {
+  color: papayawhip;
+  opacity: 86%;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.rating a:hover {
+  color: plum;
+}
+
+.rating a:active {
+  color: orchid;
+}
+
+.story{
+  background-color: LavenderBlush;
+  color: navajowhite;
+  font-family: "Roboto Mono", monospace;
+}
+
+.story p b {
+  color: orchid;
+}
+
+.border-offset {
+  border-color: black;
+  border-style: solid;
+  border-width: 100px;
+}
+
+.story p {
+  color: indigo;
+  padding: 2% 25% 20%;
+  line-height: 1.3;
+  font-size: 11pt;
+}
+
+.cast {
+  background-color: black;
+}
+
+.filmmakers {
+  padding: 0% 15% 10%;
+  background-color: linen;
+}
+
+.filmmakers ul li {
+  color: darkGoldenRod;
+  text-align: center;
+  list-style: none;
+  line-height: 2;
+  letter-spacing: 2.5px;
+}
+
+.filmmakers ul li i {
+  color: black;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+}
+
+.trailer {
+  border-color: black;
+  border-width: 100px;
+  background-color: black;
+  padding: 5% 10% 10% 10%;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+  display: block;
+  border-color: black;
+}
+
+.video-header {
+  padding: 5% 10%;
+  background-color: black;
+}
+
+.site-footer hr.line-break {
+  border-color: navajowhite;
+  margin: 60px;
+  opacity: 50%;
+}
+
+.site-footer {
+  background-color: black;
+  padding: 4%;
+}
+
+.footer-image {
+  background-color: navajowhite;
+  width: 300px;
+  opacity: 50%;
+  margin: 4% 10%;
+  float: right;
+}
+
+.site-footer p {
+  color: navajowhite;
+  margin: 5% 6%;
+  font-size: 10pt;
+  letter-spacing: 1.2px;
+  opacity: 50%;
+  font-family: helvetica, sans-serif;
+}
+
+.site-footer div .fab {
+  color: navajowhite;
+  margin: 2% 2% 10% 6%;
+  font-size: 2em;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+a.fab:hover{
+  color: plum;
+}
+
+.col {
+  height: auto;
+  float: left;
+  padding: 20px;
+}
+
+.row::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.character {
+  display: block;
+  width: 100%;
+}
+
+.offset-center {
+  padding-left: 25%;
+}
+
+.offset-square {
+  padding-left: 0;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media screen and (max-width: 1500px) {
+
+  body {
+    width: 100%;
+  }
+
+  .logo {
+    width: 60%;
+    padding: 15% 6% 0% 6%;
+  }
+
+  .col-1-large {width: 8.33%;}
+  .col-2-large {width: 16.66%;}
+  .col-3-large {width: 25%;}
+  .col-4-large {width: 33.33%;}
+  .col-5-large {width: 41.66%;}
+  .col-6-large {width: 50%;}
+  .col-7-large {width: 58.33%;}
+  .col-8-large {width: 66.66%;}
+  .col-9-large {width: 75%;}
+  .col-10-large {width: 83.33%;}
+  .col-11-large {width: 91.66%;}
+  .col-12-large {width: 100%;}
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  body {
+    width: 100%;
+  }
+
+  .hero-image {
+    height:160vh;
+  }
+
+  .logo {
+    padding: 20% 6% 0% 6%;
+  }
+
+  .rating a {
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    letter-spacing: 1.5px;
+    font-size: 16pt;
+  }
+
+  nav a:hover {
+    color: navajowhite;
+  }
+
+  nav a:active {
+    color: navajowhite;
+  }
+
+  .story p {
+    padding: 5% 15% 25% 15%;
+  }
+
+  .offset-center {
+    padding-left: 0;
+  }
+
+  .offset-square {
+    padding-left: 22.5%;
+
+  }
+
+  .border-offset {
+    border-color: black;
+    border-style: solid;
+    border-width: 80px;
+  }
+
+  .trailer {
+    border-width: 20px;
+      padding: 2% 5% 10% 5%;
+  }
+
+  a.fab:hover{
+    color: navajowhite;
+  }
+
+  .col-1-medium {width: 8.33%;}
+  .col-2-medium {width: 16.66%;}
+  .col-3-medium {width: 25%;}
+  .col-4-medium {width: 33.33%;}
+  .col-5-medium {width: 41.66%;}
+  .col-6-medium {width: 50%;}
+  .col-7-medium {width: 58.33%;}
+  .col-8-medium {width: 66.66%;}
+  .col-9-medium {width: 75%;}
+  .col-10-medium {width: 83.33%;}
+  .col-11-medium {width: 91.66%;}
+  .col-12-medium {width: 100%;}
+
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+    width: 100%;
+  }
+
+  .hero-image {
+    height:100vh;
+  }
+
+  .logo {
+    padding: 25% 6% 0% 6%;
+  }
+
+  nav ul li a {
+    padding: 5px;
+    letter-spacing: 1.5px;
+    font-size: 14pt;
+  }
+
+.rating a {
+    font-size: 11pt;
+    letter-spacing: 1.5px;
+  }
+
+  .story p {
+    padding: 0% 10% 20% 10%;
+  }
+
+  .offset-center {
+    padding-left: 0;
+  }
+
+  .offset-square {
+    padding-left: 0;
+
+  }
+
+  .border-offset {
+    border-color: black;
+    border-style: solid;
+    border-width: 20px;
+  }
+
+  .filmmakers {
+    padding: 10% 5% 15% 5%;
+  }
+
+  .trailer {
+    border-width: 10px;
+    padding: 10% 5% 15% 5%;
+  }
+
+  .footer-image {
+    float: none;
+    width: 200px;
+    margin: 5% 33%;
+  }
+
+  .site-footer p {
+    margin: 2%;
+    text-align: center;
+    font-size: 9pt;
+    letter-spacing: 1px;
+  }
+
+  .site-footer div .fab {
+    margin: 5% 0% 5% 16%;
+    font-size: 2em;
+    opacity: 50%;
+    text-decoration: none;
+  }
+
+
+  .col-1-small {width: 8.33%;}
+  .col-2-small {width: 16.66%;}
+  .col-3-small {width: 25%;}
+  .col-4-small {width: 33.33%;}
+  .col-5-small {width: 41.66%;}
+  .col-6-small {width: 50%;}
+  .col-7-small {width: 58.33%;}
+  .col-8-small {width: 66.66%;}
+  .col-9-small {width: 75%;}
+  .col-10-small {width: 83.33%;}
+  .col-11-small {width: 91.66%;}
+  .col-12-small {width: 100%;}
+
+}
+
+@media screen and (max-width: 600px) {
+
+  nav ul li a {
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 12pt;
+  }
+
+  h2, h3, h4, h5 {
+    font-size: 3em;
+  }
+
+  .border-offset {
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+  }
+
+  .filmmakers {
+    padding: 15% 2% 20% 2%;
+  }
+
+  .trailer {
+    border-width: 0px;
+    padding: 15% 2% 20% 2%;
+  }
+
+  .footer-image {
+    margin: 5% 25%;
+  }
+
+  .site-footer div .fab {
+    margin: 5% 0% 5% 13%;
+  }
+
+  .col-1-small {width: 8.33%;}
+  .col-2-small {width: 16.66%;}
+  .col-3-small {width: 25%;}
+  .col-4-small {width: 33.33%;}
+  .col-5-small {width: 41.66%;}
+  .col-6-small {width: 50%;}
+  .col-7-small {width: 58.33%;}
+  .col-8-small {width: 66.66%;}
+  .col-9-small {width: 75%;}
+  .col-10-small {width: 83.33%;}
+  .col-11-small {width: 91.66%;}
+  .col-12-small {width: 100%;}
+
+}
